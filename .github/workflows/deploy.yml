@@ -30,5 +30,5 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: portfolio-v3
+          projectId: portfolio-v3-e729e
           channelId: live
