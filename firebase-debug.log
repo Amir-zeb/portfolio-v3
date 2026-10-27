@@ -1,0 +1,36 @@
+[debug] [2026-10-27T05:49:09.268Z] ----------------------------------------------------------------------
+[debug] [2026-10-27T05:49:09.271Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2026-10-27T05:49:09.272Z] CLI Version:   14.26.0
+[debug] [2026-10-27T05:49:09.272Z] Platform:      win32
+[debug] [2026-10-27T05:49:09.272Z] Node Version:  v25.2.1
+[debug] [2026-10-27T05:49:09.272Z] Time:          Tue Oct 27 2026 10:49:09 GMT+0500 (Pakistan Standard Time)
+[debug] [2026-10-27T05:49:09.273Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\projects\portfolio-v3
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2026-10-27T05:49:12.599Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:508:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:520:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
