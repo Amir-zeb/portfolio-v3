@@ -3,6 +3,11 @@
 import { motion, useScroll } from "motion/react"
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
+import Skills from "@/components/sections/skills";
+import Footer from "@/components/sections/footer";
+import Services from "@/components/sections/services";
+import Contact from "@/components/sections/contact";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -26,9 +31,11 @@ export default function Home() {
       <div>
         <Header />
         <Hero />
-        <h1 className="font-heading text-5xl font-bold">Hello Worldy</h1>
-        <p>Welcome to my portfolio website!</p>
-        <p className="font-mono text-sm">Check out my projects and skills below.</p>
+        <About />
+        <Skills />
+        <Services />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
