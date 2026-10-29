@@ -21,6 +21,7 @@ import {
 } from "react-icons/tb";
 import commercePadImg from "@/public/mocks/commerce-pad.png";
 import erpImg from "@/public/mocks/erp.png";
+import { StaticImageData } from "next/image";
 
 
 export const skillCategories: { id: string; label: string; blurb: string; details: string[] }[] = [
@@ -178,8 +179,7 @@ export const services: { icon: IconType; title: string; description: string }[] 
             "Providing ongoing maintenance, bug fixes, performance optimization, and feature enhancements to keep applications running smoothly.",
     },
 ];
-
-export const featuredProjects = [
+export const featuredProjects: { project: string; title: string; description: string[]; tags: string[]; image: StaticImageData; link: string }[] = [
     {
         project: "E-commerce",
         title: "CommercePad",
@@ -213,7 +213,7 @@ export const featuredProjects = [
 ]
 
 
-export const projects = [
+export const projects: { project: string; title: string; description: string; tags: string[]; image: string; link: string }[] = [
     {
         project: "Spa",
         title: "GamaAg",
@@ -268,7 +268,6 @@ export const projects = [
             "axios",
         ],
         image: "./mocks/poseidon.png",
-        show: true,
         link: "https://drive.google.com/drive/folders/1jznLW6oQTPSt0FaNlY3sk29VIw0vq_dA?usp=sharing"
     },
     {
@@ -283,7 +282,6 @@ export const projects = [
             "jquery",
         ],
         image: "./mocks/borderpay.png",
-        show: true,
         link: '',
     },
     {
@@ -299,7 +297,6 @@ export const projects = [
         ],
         image: "./mocks/campaway-12.png",
         link: "http://campaway.surge.sh/",
-        show: true
     },
     {
         project: "Dashboard",
@@ -317,7 +314,6 @@ export const projects = [
         ],
         image: "./mocks/dammam.png",
         link: "http://dammam.surge.sh/",
-        show: true
     },
     {
         project: "Website",
@@ -330,7 +326,6 @@ export const projects = [
             "Javascript",
         ],
         image: "./mocks/andesT21.png",
-        show: true,
         link: ''
     },
     {
@@ -345,7 +340,6 @@ export const projects = [
             "jquery",
         ],
         image: "./mocks/study-buddy.png",
-        show: true,
         link: ''
     },
     {
@@ -357,7 +351,6 @@ export const projects = [
             "Elementor",
         ],
         image: "./mocks/propulsion.png",
-        show: true,
         link: ''
     },
     {
@@ -369,7 +362,6 @@ export const projects = [
             "Elementor",
         ],
         image: "./mocks/tattoo.png",
-        show: true,
         link: ''
     },
     {
@@ -381,7 +373,6 @@ export const projects = [
             "Elementor",
         ],
         image: "./mocks/auto-solutions.png",
-        show: true,
         link: ''
     },
     {
@@ -394,7 +385,6 @@ export const projects = [
         ],
         image: "./mocks/acan.png",
         link: "https://drive.google.com/drive/folders/1FWGou04_lAM3vPwLFETF78PU0wrsPTTi?usp=share_link",
-        show: true,
     },
     {
         project: "WordPress",
@@ -405,7 +395,6 @@ export const projects = [
             "WP Bakery",
         ],
         image: "./mocks/flippings.png",
-        show: true,
         link: ''
     },
     {
@@ -434,7 +423,6 @@ export const projects = [
             "Axios",
         ],
         image: "./mocks/mold.png",
-        show: true,
         link: "https://drive.google.com/drive/folders/1XwgiT43drnubnt2XboDwYXcNBGo6UFXF?usp=share_link"
     },
     {
@@ -449,7 +437,6 @@ export const projects = [
             "axios"
         ],
         image: "./mocks/litoral.png",
-        show: true,
         link: "https://drive.google.com/drive/folders/1ekQvDlDJgFz3Ic9fLR3s42jSC-HnG8xm?usp=sharing"
     },
     {
@@ -463,7 +450,6 @@ export const projects = [
             "Axios",
         ],
         image: "./mocks/precocial.png",
-        show: true,
         link: ''
     },
     {
@@ -475,12 +461,11 @@ export const projects = [
             "Css",
         ],
         image: "./mocks/dealorus.png",
-        show: true,
         link: "http://dealourus.surge.sh/"
     },
 ]
 
-export const archives = [
+export const archives: { title: string, built_wt: string[], url: string, live: string }[] = [
     {
         title: "Ai English Mentor",
         built_wt: ["Next js", "Typescript", "Mongo DB", "Ollama", "Prompt Engineering"],
@@ -529,4 +514,63 @@ export const archives = [
         url: "https://github.com/Amir-zeb/custom-toast-react-js",
         live: "https://amir-zeb.github.io/custom-toast-react-js/"
     },
+]
+
+export const experience: { company: string; title: string; duration: string; description: string[] }[] = [
+    {
+        company: 'Fascom',
+        title: "Full Stack Developer",
+        duration: "Aug 2024 - Dec 2025",
+        description: [
+            "Develop and maintain ERP.",
+            "Design and implement API structures to support project requirements and ensure efficient data flow.",
+            "Provide mentorship and technical guidance to junior developers to enhance team capabilities and ensure adherence to best practices.",
+        ]
+    },
+    {
+        company: 'KDYSLAB',
+        title: "MERN Stack Developer",
+        duration: "May 2024 - July 2024",
+        description: [
+            "Develop and maintain web applications using the - (MongoDB, Mysql, Reactjs, Nextjs, Express.js, Nestjs, Node.js).",
+            "Design and implement API structures to support project requirements and ensure efficient data flow.",
+            "Provide mentorship and technical guidance to junior developers to enhance team capabilities and ensure adherence to best practices.",
+        ]
+    },
+    {
+        company: 'ITVerticals',
+        title: "MERN Stack Developer",
+        duration: "July 2023 - Feb 2024",
+        description: [
+            "Implemented a robust discount system.",
+            "Contributed to the continuous improvement of code quality and maintainability, participating in code reviews and implementing best practices.",
+            "Improved and optimized the database for better overall performance.",
+            "Followed Agile and Scrum methodologies, fostering an environment of efficiency and collaboration throughout the development process.",
+        ]
+    },
+    {
+        company: 'Invention And Innovation',
+        title: "MERN / Mobile App Developer",
+        duration: "Feb 2022 - July 2023",
+        description: [
+            "Work with a variety of different languages, frameworks, and content management systems such as TypeScript, React.js, React Native, Vue.js, Next.js, Node Js, Express js, Mongo DB, Wordpress etc.",
+            "Work on projects as a full-stack developer, handling both front-end and back-end tasks."
+        ]
+    },
+    {
+        company: 'DiscoverItech',
+        title: "Web Developer",
+        duration: "July 2021 - Jan 2022",
+        description: [
+            "Converting Adobe xd/Figma designs into pixel perfect web presence using Reactjs, Wordpress and (html, css, js, bootstrap, jquery)."
+        ]
+    },
+    {
+        company: 'UMW Media',
+        title: "Web Developer",
+        duration: "April 2021 - June 2021",
+        description: [
+            "Work on a content management system. Convert adobe xd / figma design into pixel perfect web presence using WordPress."
+        ]
+    }
 ]
