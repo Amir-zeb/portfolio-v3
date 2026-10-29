@@ -31,7 +31,7 @@ export default function MoreProjects() {
       <div className="container mx-auto mb-12 px-4 md:mb-16">
         <Stagger className="max-w-2xl" stagger={0.12}>
           <StaggerItem as="p" className="mb-3 font-mono text-sm text-accent">
-            04 / more work
+            05 / more work
           </StaggerItem>
           <StaggerItem
             as="h2"

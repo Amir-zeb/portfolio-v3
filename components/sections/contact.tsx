@@ -32,7 +32,7 @@ export default function Contact() {
                                 as="p"
                                 className="mb-3 font-mono text-sm text-accent"
                             >
-                                05 / contact
+                                08 / contact
                             </StaggerItem>
 
                             <StaggerItem

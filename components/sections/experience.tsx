@@ -10,7 +10,7 @@ export default function Experience() {
             <div className="container relative mx-auto px-4">
                 <Stagger className="mb-12 max-w-2xl md:mb-16" stagger={0.12}>
                     <StaggerItem as="p" className="mb-3 font-mono text-sm text-accent">
-                        02 / experience
+                        07 / experience
                     </StaggerItem>
                     <StaggerItem
                         as="h2"
