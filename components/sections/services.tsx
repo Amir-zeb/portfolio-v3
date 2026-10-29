@@ -27,7 +27,7 @@ export default function Services() {
                 </Stagger>
 
                 {/* Cards */}
-                <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                <ul className="grid gap-2 lg:gap-4 sm:grid-cols-2 xl:grid-cols-4">
                     {services.map((s, i) => {
                         const Icon = s.icon;
                         return (

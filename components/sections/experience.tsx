@@ -4,7 +4,7 @@ import { Timeline, TimelineItem } from "@/components/ui/timeline";
 
 export default function Experience() {
     return (
-        <section id="exp" className="relative overflow-hidden py-24 md:py-32">
+        <section id="experience" className="relative overflow-hidden py-24 md:py-32">
             <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
 
             <div className="container relative mx-auto px-4">

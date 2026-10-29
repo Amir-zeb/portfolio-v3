@@ -59,7 +59,7 @@ export default function Hero() {
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                 <motion.div style={{ x: blobX, y: blobY }}>
                     <motion.div
-                        className="h-[26rem] w-[26rem] bg-accent/40 blur-2xl"
+                        className="h-104 w-104 bg-accent/40 blur-2xl"
                         initial={{ opacity: 0, scale: 0.6 }}
                         animate={{
                             opacity: 1,
@@ -82,7 +82,7 @@ export default function Hero() {
             {/* IMAGE: outer div = mouse movement, inner div = entrance animation.
           Keeping them on separate elements stops them fighting over y */}
             <div className="absolute bottom-0 left-0 flex h-full w-full items-end justify-center">
-                <motion.div className="w-[70%]" style={{ x: imgX, y: imgY }}>
+                <motion.div className="w-full lg:w-[80%] xl:w-[70%]" style={{ x: imgX, y: imgY }}>
                     <motion.div
                         initial={{ opacity: 0, y: 80 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -92,14 +92,16 @@ export default function Hero() {
                             src={heroPic}
                             alt="Amir Zeb"
                             loading="eager"
-                            className="h-auto w-full object-cover object-bottom"
+                            className=""
+                            // className="h-auto w-full"
                         />
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent"></div>
                     </motion.div>
                 </motion.div>
             </div>
 
             {/* TEXT: every motion child below fades up in order */}
-            <div className="container relative z-10 mx-auto px-4">
+            <div className="container relative z-10 mx-auto px-4 py-4">
                 <motion.div
                     className="flex items-end justify-between gap-4"
                     variants={container}
@@ -107,10 +109,10 @@ export default function Hero() {
                     animate="show"
                 >
                     <div className="w-1/3">
-                        <motion.p variants={item} className="text-4xl">
+                        <motion.p variants={item} className="text-2xl lg:text-4xl">
                             <span className="font-extrabold">Hi</span> I’m
                         </motion.p>
-                        <motion.h1 variants={item} className="text-9xl font-extrabold">
+                        <motion.h1 variants={item} className="text-7xl lg:text-9xl font-extrabold">
                             <span className="text-accent text_shadow">Amir</span> Zeb
                         </motion.h1>
                         <motion.p variants={item} className="mb-6 text-sm text-muted">
@@ -118,14 +120,14 @@ export default function Hero() {
                             software. Specializing in the MERN stack, with production
                             experience in ERP systems and eCommerce SaaS platforms.
                         </motion.p>
-                        <motion.div variants={item} className="flex gap-4">
-                            <Button variant="secondary" href="/resume.pdf">View Resume</Button>
-                            <Button href="#contact">Hire Me</Button>
+                        <motion.div variants={item} className="flex gap-2 lg:gap-4">
+                            <Button variant="secondary" className="text-sm" href="/resume.pdf">View Resume</Button>
+                            <Button href="#contact" className="text-sm">Hire Me</Button>
                         </motion.div>
                     </div>
 
                     <div className="w-1/3 text-end">
-                        <motion.h4 variants={item} className="text-4xl font-medium">
+                        <motion.h4 variants={item} className="text-2xl lg:text-4xl font-medium">
                             5 Years
                         </motion.h4>
                         <motion.h4 variants={item} className="mb-2 text-lg">
@@ -133,11 +135,11 @@ export default function Hero() {
                         </motion.h4>
                         <motion.h4
                             variants={item}
-                            className="text-4xl font-extrabold text-accent text_shadow"
+                            className="text-2xl lg:text-4xl font-extrabold text-accent text_shadow"
                         >
                             Full Stack (MERN)
                         </motion.h4>
-                        <motion.h4 variants={item} className="text-4xl font-extrabold">
+                        <motion.h4 variants={item} className="text-2xl lg:text-4xl font-extrabold">
                             Developer
                         </motion.h4>
                     </div>

@@ -22,7 +22,7 @@ export default function Contact() {
             <div className="container relative mx-auto px-4">
                 <Reveal className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface/60 px-6 py-14 text-center shadow-[inset_0_1px_0_rgb(255_255_255/0.06)] md:px-12 md:py-20">
                     {/* soft glow at the top of the card */}
-                    <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-[36rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-3xl" />
+                    <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-xl -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-3xl" />
 
                     <div className="relative">
                         <ContactIcon />

@@ -5,7 +5,7 @@ import { CountUp } from "@/components/ui/count-up";
 const stats = [
     { value: "40+", label: "Projects completed" },
     { value: "5+", label: "Years of experience" },
-    { value: "2", label: "Domains: ERP & eCommerce" },
+    // { value: "2", label: "Domains: ERP & eCommerce" },
 ];
 
 const stack = [
@@ -44,13 +44,13 @@ export default function About() {
                     </StaggerItem>
                 </Stagger>
 
-                <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
+                <div className="grid gap-6 lg:grid-cols-5 lg:gap-16">
                     {/* Story */}
                     <Stagger
-                        className="space-y-5 leading-relaxed text-muted lg:col-span-3"
+                        className="space-y-3 lg:space-y-5 leading-relaxed text-muted lg:col-span-3"
                         stagger={0.12}
                     >
-                        <StaggerItem as="p" className="text-lg text-foreground md:text-xl">
+                        <StaggerItem as="p" className="text-md text-foreground md:text-xl">
                             Hi, I’m Amir Zeb, a Full Stack Developer with over 5 years of
                             experience building modern, scalable, and user-focused web
                             applications.
@@ -79,10 +79,10 @@ export default function About() {
                     </Stagger>
 
                     {/* Facts */}
-                    <div className="space-y-6 lg:col-span-2">
+                    <div className="space-y-2 lg:space-y-6 lg:col-span-2">
                         <Reveal as="ul" className={`${card} divide-x divide-border flex`}>
                             {stats.map((s) => (
-                                <li key={s.label} className="flex items-center gap-4 p-6">
+                                <li key={s.label} className="flex max-lg:flex-1 flex-row lg:flex-col xl:flex-row items-center gap-4 p-6">
                                     <span className="font-heading text-4xl font-extrabold text-accent text_shadow">
                                         <CountUp value={s.value} />
                                     </span>
