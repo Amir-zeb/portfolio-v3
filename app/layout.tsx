@@ -19,25 +19,44 @@ const outfit = Outfit({
 });
 
 const description =
-  "Full-stack developer with five years of experience in the MERN stack, Next.js and NestJS. Portfolio and projects.";
+  "Amir Zeb is a full-stack developer specializing in the MERN stack, Next.js, and NestJS, building scalable web apps, ERP systems, and eCommerce platforms.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://amirzeb.dev"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Amir Zeb | Full Stack Developer",
     template: "%s | Amir Zeb",
   },
   description,
   authors: [{ name: "Amir Zeb" }],
+  creator: "Amir Zeb",
   openGraph: {
     title: "Amir Zeb | Full Stack Developer",
     description,
     type: "website",
-    url: "https://amirzeb.dev/",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    url: "/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Amir Zeb, Full Stack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "Amir Zeb | Full Stack Developer",
+    description,
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Amir Zeb, Full Stack Developer",
+      },
+    ],
   },
 };
 
@@ -65,7 +84,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         {children}
-        <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "792a78cc8a83402ba39e51b05f9b3a5e"}'></script>
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "792a78cc8a83402ba39e51b05f9b3a5e"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
