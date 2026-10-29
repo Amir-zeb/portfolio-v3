@@ -97,7 +97,9 @@ export default function Header() {
                 <div className="flex items-center gap-3">
                     <Button
                         variant="secondary"
-                        href="/resume.pdf"
+                        href="/amir-zeb-resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hidden px-4 py-2 text-sm sm:inline-flex"
                     >
                         Resume

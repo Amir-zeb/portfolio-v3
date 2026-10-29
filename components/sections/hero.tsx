@@ -143,8 +143,12 @@ export default function Hero() {
                             experience in ERP systems and eCommerce SaaS platforms.
                         </motion.p>
                         <motion.div variants={item} className="flex gap-2 lg:gap-4">
-                            <Button variant="secondary" className="text-sm" href="/resume.pdf">View Resume</Button>
-                            <Button href="#contact" className="text-sm">Hire Me</Button>
+                            <Button variant="secondary" className="text-sm" href="/amir-zeb-resume.pdf" target="_blank" rel="noopener noreferrer">
+                                View Resume
+                            </Button>
+                            <Button href="#contact" className="text-sm">
+                                Hire Me
+                            </Button>
                         </motion.div>
                     </div>
 
