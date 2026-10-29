@@ -11,6 +11,7 @@ import Contact from "@/components/sections/contact";
 import Projects from "@/components/sections/projects";
 import MoreProjects from "@/components/sections/more-projects";
 import Archive from "@/components/sections/archive";
+import Experience from "@/components/sections/experience";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -40,6 +41,7 @@ export default function Home() {
         <Projects />
         <MoreProjects />
         <Archive />
+        <Experience />
         <Contact />
         <Footer />
       </div>

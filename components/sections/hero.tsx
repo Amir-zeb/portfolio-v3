@@ -49,6 +49,7 @@ export default function Hero() {
 
     return (
         <div
+            id="home"
             className="relative flex min-h-screen max-h-screen items-center justify-center overflow-hidden"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}

@@ -14,9 +14,10 @@ import { Button } from "@/components/ui/button";
 const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "exp", label: "Experience" },
+    { id: "skills", label: "Skills" },
     { id: "services", label: "Services" },
     { id: "work", label: "Work" },
+    { id: "experience", label: "Experience" },
     { id: "contact", label: "Contact" },
 ];
 
