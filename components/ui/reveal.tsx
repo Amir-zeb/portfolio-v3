@@ -10,6 +10,7 @@ const tags = {
   li: motion.li,
   p: motion.p,
   h2: motion.h2,
+  h3: motion.h3,
 } as const;
 
 type Tag = keyof typeof tags;
