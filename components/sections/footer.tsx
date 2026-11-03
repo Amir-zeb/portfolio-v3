@@ -17,11 +17,12 @@ const socials = [
         label: "LinkedIn",
         Icon: FaLinkedin,
     },
-    {
-        href: "https://portfolio-a5a72.web.app/",
-        label: "Check out my Portfolio V1",
-        Icon: MdOutlineWeb,
-    },
+    // does not required
+    // {
+    //     href: "https://portfolio-a5a72.web.app/",
+    //     label: "Check out my Portfolio V1",
+    //     Icon: MdOutlineWeb,
+    // },
 ];
 
 export default function Footer() {
@@ -56,9 +57,10 @@ export default function Footer() {
                         <FooterPill href={`mailto:${EMAIL}`} Icon={MdEmail}>
                             Contact
                         </FooterPill>
-                        <FooterPill href="/privacy-policy" Icon={MdPrivacyTip}>
+                        {/* for now there is no privacy policy page */}
+                        {/* <FooterPill href="/privacy-policy" Icon={MdPrivacyTip}>
                             Privacy Policy
-                        </FooterPill>
+                        </FooterPill> */}
                     </div>
                 </div>
 
