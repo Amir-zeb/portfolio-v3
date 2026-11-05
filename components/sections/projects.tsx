@@ -183,7 +183,7 @@ function ProjectSlide({
                 {/* Image */}
                 <Reveal delay={0.15} y={40} className={flip ? "md:order-1" : undefined}>
                     <div className="relative">
-                        <div className="pointer-events-none absolute -inset-6 rounded-full bg-accent/10 blur-3xl" />
+                        <div className="pointer-events-none absolute -inset-6 rounded-full bg-accent/10 blur-3xl max-[500px]:hidden" />
                         <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-surface/60 shadow-[inset_0_1px_0_rgb(255_255_255/0.06)]">
                             <Image
                                 src={project.image}

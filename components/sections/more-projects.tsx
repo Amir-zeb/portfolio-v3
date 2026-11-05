@@ -15,7 +15,8 @@ import { Reveal, Stagger, StaggerItem } from "@/components/ui/reveal";
 
 type Project = (typeof projects)[number];
 
-const COPIES = 3; // enough copies that wide screens never see a gap
+// for the seamless loop, we need to render multiple copies of the list. This is the number of copies to render. 1 is enough that wide screens never see a gap.
+const COPIES = 1; // enough copies that wide screens never see a gap
 const SPEED = 40; // pixels per second
 
 const fade = {

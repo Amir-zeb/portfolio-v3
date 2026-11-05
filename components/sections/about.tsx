@@ -44,7 +44,7 @@ export default function About() {
                     </StaggerItem>
                 </Stagger>
 
-                <div className="grid gap-6 lg:grid-cols-5 lg:gap-16">
+                <div className="grid gap-6 grid-cols-1 lg:grid-cols-5 lg:gap-16">
                     {/* Story */}
                     <Stagger
                         className="space-y-3 lg:space-y-5 leading-relaxed text-muted lg:col-span-3"
@@ -80,7 +80,7 @@ export default function About() {
 
                     {/* Facts */}
                     <div className="space-y-2 lg:space-y-6 lg:col-span-2">
-                        <Reveal as="ul" className={`${card} divide-x divide-border flex`}>
+                        <Reveal as="ul" className={`${card} min-[450px]:divide-x max-[450px]:divide-y divide-border flex max-[450px]:flex-col`}>
                             {stats.map((s) => (
                                 <li key={s.label} className="flex max-lg:flex-1 flex-row lg:flex-col xl:flex-row items-center gap-4 p-6">
                                     <span className="font-heading text-4xl font-extrabold text-accent text_shadow">

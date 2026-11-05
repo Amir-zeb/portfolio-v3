@@ -32,19 +32,21 @@ export default function Home() {
           backgroundColor: "var(--accent)",
         }}
       />
-      <div>
+      <>
         <Header />
-        <Hero />
-        <About />
-        <Skills />
-        <Services />
-        <Projects />
-        <MoreProjects />
-        <Archive />
-        <Experience />
-        <Contact />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Services />
+          <Projects />
+          <MoreProjects />
+          <Archive />
+          <Experience />
+          <Contact />
+        </main>
         <Footer />
-      </div>
+      </>
     </>
   );
 }

@@ -296,7 +296,7 @@ export const projects: { project: string; title: string; description: string; ta
             "jquery",
         ],
         image: "./mocks/campaway-12.png",
-        link: "http://campaway.surge.sh/",
+        link: "https://campaway.surge.sh/",
     },
     {
         project: "Dashboard",
@@ -313,7 +313,7 @@ export const projects: { project: string; title: string; description: string; ta
             "jquery",
         ],
         image: "./mocks/dammam.png",
-        link: "http://dammam.surge.sh/",
+        link: "https://dammam.surge.sh/",
     },
     {
         project: "Website",
@@ -461,7 +461,7 @@ export const projects: { project: string; title: string; description: string; ta
             "Css",
         ],
         image: "./mocks/dealorus.png",
-        link: "http://dealourus.surge.sh/"
+        link: "https://dealourus.surge.sh/"
     },
 ]
 

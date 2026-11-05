@@ -114,6 +114,7 @@ export default function Hero() {
                             src={heroPic}
                             alt="Amir Zeb"
                             loading="eager"
+                            priority={true}
                             className="h-auto w-full"
                         />
                         {/* <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent"></div> */}
@@ -153,21 +154,21 @@ export default function Hero() {
                     </div>
 
                     <div className="w-full md:w-1/3 text-end max-md:hidden">
-                        <motion.h4 variants={item} className="text-2xl lg:text-4xl font-medium">
+                        <motion.p variants={item} className="text-2xl lg:text-4xl font-medium">
                             5 Years
-                        </motion.h4>
-                        <motion.h4 variants={item} className="mb-2 text-lg">
+                        </motion.p>
+                        <motion.p variants={item} className="mb-2 text-lg">
                             Experience
-                        </motion.h4>
-                        <motion.h4
+                        </motion.p>
+                        <motion.p
                             variants={item}
                             className="text-2xl lg:text-4xl font-extrabold text-accent text_shadow"
                         >
                             Full Stack (MERN)
-                        </motion.h4>
-                        <motion.h4 variants={item} className="text-2xl lg:text-4xl font-extrabold">
+                        </motion.p>
+                        <motion.p variants={item} className="text-2xl lg:text-4xl font-extrabold">
                             Developer
-                        </motion.h4>
+                        </motion.p>
                     </div>
                 </motion.div>
             </div>
